@@ -162,7 +162,8 @@ hr {
     border: none;
 }
 
-.input {
+.input,
+#mce-EMAIL {
 background-color: #ffffff;
     border: 4px solid #1b8dbf;
     padding: 1rem 0.8rem 1rem 1.3rem;
