@@ -1,204 +1,309 @@
-a {
+a
+{
     text-decoration: none;
 }
-body {
-    color: #222;
+body
+{
     font-family: Baloo;
     font-size: 1.2rem;
+
+    color: #222;
 }
-.header {
+.header
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+
     width: 100%;
 }
-.logo {
-    flex: 1;
+.logo
+{
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+        flex: 1;
 }
-.menu {
+.menu
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
-.menu-link {
-    color: #005073;
+.menu-link
+{
     padding: 1rem 2rem;
+
+    color: #005073;
 }
-.menu-link:hover {
+.menu-link:hover
+{
     color: #ffa63e;
 }
 
-.banner {
+.banner
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
     width: 100%;
     height: 90vh;
-    display: flex;
     margin: 0;
     padding: 0;
-    
+
     background-repeat: no-repeat;
     background-position: center center;
-        
 }
-.banner--inicio {
-    background-image: url(../images/wall-red.jpg);
+.banner--inicio
+{
     max-height: 1084px;
+
+    background-image: url(../images/wall-red.jpg);
 }
-.content {
+.content
+{
+    position: relative;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
     width: 960px;
     margin: 0 auto;
-    position: relative;
-    display: flex;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
-.banner-text {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
-    text-align: center;
+.banner-text
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+
+    text-align: center;
+
+    background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, .8) 100%);
+    background:         linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, .8) 100%);
 }
-.banner-title {
-    margin: 0;
-    padding: 2rem 1rem 14rem;
-    color: #fff;
+.banner-title
+{
     font-family: Signika;
     font-size: 6rem;
     font-weight: lighter;
+
+    margin: 0;
+    padding: 2rem 1rem 14rem;
+
+    color: #fff;
 }
-.banner-title--big {
-    display: inline-flex;
-    justify-content: center;
+.banner-title--big
+{
     line-height: 1.1;
+
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
-.banner-title--numbers {
-    display: inline-flex;
-    justify-content: center;
-    line-height: 1.1;
+.banner-title--numbers
+{
     font-size: 7rem;
-}
-.banner-title--small {
+    line-height: 1.1;
+
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+}
+.banner-title--small
+{
     font-size: 2.8rem;
     line-height: 1.6;
+
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+
     width: 80%;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
-.banner-image {
+.banner-image
+{
     max-width: 100%;
+
+    -ms-flex-item-align: center;
     align-self: center;
 }
 
-.banner--vantagens {
-    background-image: url(../images/wall-blue.png);
-    margin-top: -5px;
+.banner--vantagens
+{
     height: 1074px;
+    margin-top: -5px;
+
+    background-image: url(../images/wall-blue.png);
 }
 
-.vantagens {
-    flex-direction: column;
+.vantagens
+{
+        flex-direction: column;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
 }
 
-.vantagens-title {
-    color: #ffffff;
+.vantagens-title
+{
     font-size: 3rem;
-    text-align: center;
     font-weight: 400;
+
+    text-align: center;
+
+    color: #fff;
 }
 
-.vantagem {
+.vantagem
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    margin-bottom: 4rem;
+
     margin-right: 8%;
+    margin-bottom: 4rem;
     margin-left: 0;
 }
 
-.vantagem-image {
-    margin: 0 2rem;
+.vantagem-image
+{
     max-width: 100%;
+    margin: 0 2rem;
+
+    -ms-flex-item-align: center;
     align-self: center;
 }
 
-.vantagem-text {
-    
-}
 
-.vantagem-title {
-    color: #f58a1e;
+
+.vantagem-title
+{
     font-family: Baloo;
     font-weight: 400;
+
+    color: #f58a1e;
 }
 
-.vantagem-description {
-    color: #ffffff;
+.vantagem-description
+{
     font-family: Signika;
     font-size: 1.35rem;
+
+    color: #fff;
 }
 
-hr {
-    
-}
 
-.vantagem-separator {
+
+.vantagem-separator
+{
     width: 45%;
     height: 1px;
+
     background-color: #f58a1e;
-    
 }
 
-.vantagem--odd {
-    text-align: end;
+.vantagem--odd
+{
     margin-right: 0;
     margin-left: 8%;
+
+    text-align: end;
 }
 
-.banner--interesse {
-    background-image: url(../images/wall-yellow.png);
+.banner--interesse
+{
     height: 1075px;
+
+    background-image: url(../images/wall-yellow.png);
 }
 
-.button {
-    background-color: #1b8dbf;
-    border-radius: 1rem;
-    font-size: 3em;
+.button
+{
     font-family: Baloo;
-    padding: 0.5rem 5rem;
+    font-size: 3em;
+
+    padding: .5rem 5rem;
+
     color: #fff;
     border: none;
+    border-radius: 1rem;
+    background-color: #1b8dbf;
 }
 
 .input,
-#mce-EMAIL {
-background-color: #ffffff;
-    border: 4px solid #1b8dbf;
-    padding: 1rem 0.8rem 1rem 1.3rem;
-    margin-bottom: 2rem;
+#mce-EMAIL
+{
     font-family: Verdana;
     font-size: 3rem;
-    color: #999999;
+
     width: 70%;
-    border-radius: 12px;
-}
-
-.interesse-text {
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 3rem;
-    padding: 0 2rem;
     margin-bottom: 2rem;
+    padding: 1rem .8rem 1rem 1.3rem;
+
+    color: #999;
+    border: 4px solid #1b8dbf;
+    border-radius: 12px;
+    background-color: #fff;
 }
 
-.interesse-title {
-    color: #fff;
+.interesse-text
+{
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+
+    border-radius: 3rem;
+    background: rgba(0, 0, 0, .2);
+}
+.interesse-title
+{
     font-family: Baloo;
     font-size: 4.5rem;
     font-weight: 400;
-    margin: 2rem;
-    text-align: end;
-}
 
-.interesse-description {
+    margin: 2rem;
+
     text-align: end;
+
+    color: #fff;
+}
+.interesse-description
+{
     font-family: Verdana;
     font-size: 2.6rem;
     font-weight: 400;
-    color: #ffffff;
-}
 
-.interesse {
-    flex-direction: column;
+    text-align: end;
+
+    color: #fff;
+}
+.interesse
+{
+        flex-direction: column;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
 }
